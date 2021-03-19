@@ -69,6 +69,7 @@ function App() {
         {loading && <Status>Loading...⏰</Status>}
         {error && <Status>Nothing found 😢</Status>}
         <Section>
+          <Character name="Sue" image="https://source.unsplash.com/random/200x200" status="Alive"/>
           {characters?.map((character) => (
             <Character key={character.id} {...character} />
           ))}
